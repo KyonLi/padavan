@@ -3,15 +3,13 @@ padavan 中文
 
 简体中文 & 路由器适配
 
-[![GitHub release](https://img.shields.io/github/release/gorden5566/padavan.svg)](https://github.com/gorden5566/padavan/releases)
-
 ------
 
 padavan 是一个优秀的路由器固件，支持采用 RT3883/MT7620/MT7621/MT7628 等系列 CPU 的路由器
 
 ## 说明
 
-本项目旨在使 padavan 实现更好的中文本地化，以方便更多的用户
+本项目fork自 https://github.com/gorden5566/padavan
 
 项目主要包含两部分：简体中文 dict 文件，部分常见路由器的适配文件
 
@@ -19,27 +17,11 @@ padavan 是一个优秀的路由器固件，支持采用 RT3883/MT7620/MT7621/MT
 
 - 联想 newifi mini (NEWIFI-MINI)
 
-- 联想 newifi2 (NEWIFI-D1)
-
-- 联想 newifi y1s (NEWIFI-Y1S)
-
-- 优酷路由宝 L1 (YK-L1)
-
-- 斐讯 K2 (PSG1218)
-
 ------
 
-![image](https://github.com/gorden5566/padavan/raw/master/screenshot/index.png)
+![image](https://github.com/KyonLi/padavan/raw/master/screenshot/index.png)
 
 ## 使用方法
-
-### 使用编译好的固件
-
-提供部分已编译好的固件 (**仅供测试**)，仅针对路由器进行适配并加入简体中文。
-
-可直接下载对应型号固件，通过 uboot 或 breed 刷入（**请务必确保与路由器型号一致**）。
-
-固件下载地址: http://pan.baidu.com/s/1o8jLp9o 密码: 4y9d
 
 ### 手动编译固件
 
