@@ -61,7 +61,7 @@ sudo git clone https://gitee.com/gorden5566/rt-n56u.git
 下载简体中文源码
 ``` bash
 cd ~/
-git clone https://github.com/gorden5566/padavan.git
+git clone https://github.com/KyonLi/padavan.git
 ```
 
 安装
