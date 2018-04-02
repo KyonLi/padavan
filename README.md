@@ -122,9 +122,7 @@ sudo ./build_firmware
 │   ├── boards
 │   │   └── RT-AC54U ---newifi-mini适配文件
 │   │       ├── board.h
-│   │       ├── board.mk
-│   │       ├── kernel-3.4.x.config
-│   │       └── libc.config -> ../uclibc-mipsel.config
+│   │       └── kernel-3.4.x.config
 │   └── templates
 │       ├── newifi_mini_base.config ---newifi-mini简版配置
 │       └── newifi_mini_full.config ---newifi-mini完整版配置
