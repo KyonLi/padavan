@@ -22,6 +22,7 @@ copyRouteConfig(){
 	echo "--------------开始复制路由器适配文件------------------"
 	if [ -d "${ROOTDIR}/trunk/configs/" ] ; then
 		cp -fRv "${ROOTDIR}/trunk/configs/" "${DESTDIR}/trunk/"
+		rm -rf "${DESTDIR}/trunk/configs/boards/RT-AC54U/SingleSKU*"
 	fi
 	echo "--------------复制路由器适配文件结束------------------"
 }
