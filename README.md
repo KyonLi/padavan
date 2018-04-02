@@ -15,7 +15,7 @@ padavan 是一个优秀的路由器固件，支持采用 RT3883/MT7620/MT7621/MT
 
 已适配的路由器型号如下：
 
-- 联想 newifi mini (NEWIFI-MINI)
+- 联想 newifi mini
 
 ------
 
@@ -84,14 +84,14 @@ sudo ./build_toolchain
 
 #### 方法一： 手动编辑 `/opt/rt-n56u/trunk/.config`
 
-修改路由器型号相关配置(例如 NEWIFI-D1)
+修改路由器型号相关配置
 ```
 ### Target Vendor/Product (support only Ralink RT3883/MT7620/MT7621/MT7628)
 CONFIG_VENDOR=Ralink
-CONFIG_PRODUCT=MT7621
+CONFIG_PRODUCT=MT7620
 
 ### Target ProductID (board select, max 12 symbols)
-CONFIG_FIRMWARE_PRODUCT_ID="NEWIFI-D1"
+CONFIG_FIRMWARE_PRODUCT_ID="RT-AC54U"
 ```
 
 修改语言配置
@@ -103,7 +103,7 @@ CONFIG_FIRMWARE_INCLUDE_LANG_CN=y
 
 ``` bash
 cd /opt/rt-n56u/trunk/
-sudo cp configs/templates/newifi_d1_full.config .config
+sudo cp configs/templates/newifi_mini_full.config .config
 ```
 
 ### 编译固件
@@ -120,14 +120,14 @@ sudo ./build_firmware
 ```
 ├── configs
 │   ├── boards
-│   │   └── NEWIFI-D1 ---newifi-d1适配文件
+│   │   └── RT-AC54U ---newifi-mini适配文件
 │   │       ├── board.h
 │   │       ├── board.mk
 │   │       ├── kernel-3.4.x.config
 │   │       └── libc.config -> ../uclibc-mipsel.config
 │   └── templates
-│       ├── newifi_d1_base.config ---newifi-d1简版配置
-│       └── newifi_d1_full.config ---newifi-d1完整版配置
+│       ├── newifi_mini_base.config ---newifi-mini简版配置
+│       └── newifi_mini_full.config ---newifi-mini完整版配置
 └── user
     └── www
         ├── dict
